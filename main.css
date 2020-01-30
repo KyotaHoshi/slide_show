@@ -1,0 +1,85 @@
+#wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#img {
+    position: relative;
+    width: 500px;
+}
+
+.img1, .img2, .img3, .img4 {
+    display: none;
+}
+
+.appear {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* スライドして切り替えるやつ */
+
+#wrap-b {
+    display: flex;
+    margin: 0 auto 50px;
+    width: 500px;
+    height: 350px;
+    position: relative;
+}
+
+#img-b {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-b {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: none;
+}
+
+.non-hidden {
+    display: block;
+    transform: translateX(0);
+    transition: all 0.5s linear;
+}
+
+.hidden-left {
+    display: block;
+    transform: translateX(-500px);
+    transition: all 0.5s linear;
+}
+
+.hidden-right {
+    display: block;
+    transform: translateX(500px);
+    transition: all 0.5s linear;
+}
+
+
+#left-b, #right-b {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(00, 00, 00, 0.7);
+    padding: 0;
+    border: none;
+    z-index: 10;
+}
+
+#left-b {
+    left: 0;
+}
+
+#right-b {
+    right: 0;
+}
