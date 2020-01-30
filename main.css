@@ -43,22 +43,26 @@
     display: none;
 }
 
+.img-b6, .img-b5 {
+    height: 100%;
+}
+
 .non-hidden {
     display: block;
     transform: translateX(0);
-    transition: all 0.5s linear;
+    transition: transform 0.5s linear;
 }
 
 .hidden-left {
     display: block;
     transform: translateX(-500px);
-    transition: all 0.5s linear;
+    transition: transform 0.5s linear;
 }
 
 .hidden-right {
     display: block;
     transform: translateX(500px);
-    transition: all 0.5s linear;
+    transition: transform 0.5s linear;
 }
 
 
@@ -82,4 +86,12 @@
 
 #right-b {
     right: 0;
+}
+
+.none {
+    display: none;
+}
+
+.low-z-index {
+    z-index: -2;
 }
